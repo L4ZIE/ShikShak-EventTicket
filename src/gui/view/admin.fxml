@@ -12,7 +12,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.AdminController">
+<AnchorPane prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.adminViewController">
     <children>
         <StackPane layoutX="144.0" layoutY="150.0" prefHeight="600.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <children>
@@ -55,18 +55,13 @@
                                                         <Font name="System Bold" size="18.0" />
                                                     </font>
                                                 </Label>
-                                                <Button layoutX="17.0" layoutY="240.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="171.0" styleClass="nav-btn" stylesheets="@AdminDesign.css" text="EASV Customers">
+                                                <Button layoutX="17.0" layoutY="240.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="171.0" styleClass="nav-btn" stylesheets="@AdminDesign.css" text="Customers">
                                                     <graphic>
                                                         <FontAwesomeIcon fill="WHITE" glyphName="USERS" size="1.2em" text="" />
                                                     </graphic>
                                                 </Button>
                                                 <Line endX="76.0" endY="-1.52587890625E-5" layoutX="101.0" layoutY="211.0" startX="-72.66666412353516" startY="-1.52587890625E-5" stroke="WHITE" />
-                                                <Button layoutX="18.0" layoutY="275.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="171.0" styleClass="nav-btn" stylesheets="@AdminDesign.css" text="Coordinators">
-                                                    <graphic>
-                                                        <FontAwesomeIcon fill="WHITE" glyphName="CHECK" size="1.2em" text="" />
-                                                    </graphic>
-                                                </Button>
-                                                <Button layoutX="18.0" layoutY="310.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="171.0" styleClass="nav-btn" stylesheets="@AdminDesign.css" text="Events">
+                                                <Button layoutX="17.0" layoutY="275.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="171.0" styleClass="nav-btn" stylesheets="@AdminDesign.css" text="Events">
                                                     <graphic>
                                                         <FontAwesomeIcon fill="WHITE" glyphName="CALENDAR" size="1.2em" text="" />
                                                     </graphic>
@@ -76,7 +71,7 @@
                                                         <FontAwesomeIcon fill="WHITE" glyphName="SIGN_OUT" size="2em" styleClass="logout-btn" />
                                                     </graphic>
                                                 </Button>
-                                                <Label layoutX="69.0" layoutY="500.0" text="Sign Out" textFill="WHITE">
+                                                <Label layoutX="65.0" layoutY="500.0" text="Sign Out" textFill="WHITE">
                                                     <font>
                                                         <Font name="Tahoma" size="16.0" />
                                                     </font>
@@ -105,7 +100,6 @@
                                                         </TableView>
                                                         <TextField layoutX="50.0" layoutY="24.0" prefHeight="30.0" prefWidth="421.0" promptText="Search" styleClass="search" stylesheets="@AdminDesign.css" />
                                                         <FontAwesomeIcon glyphName="SEARCH" layoutX="59.0" layoutY="43.0" size="1.2em" />
-                                                        <Button layoutX="747.0" layoutY="24.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="90.0" styleClass="addUser-btn" stylesheets="@AdminDesign.css" text="Add User" />
                                                         <Button layoutX="657.0" layoutY="495.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="90.0" styleClass="addUser-btn" stylesheets="@AdminDesign.css" text="Delete" />
                                                         <Button layoutX="130.0" layoutY="495.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="90.0" styleClass="addUser-btn" stylesheets="@AdminDesign.css" text="Edit" />
                                                     </children>

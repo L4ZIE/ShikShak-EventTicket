@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="471.0" prefWidth="559.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.LoginController">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="471.0" prefWidth="559.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.loginViewController">
     <children>
         <AnchorPane prefHeight="471.0" prefWidth="488.0">
             <children>
@@ -19,12 +19,12 @@
                         </Label>
                         <ImageView fitHeight="209.0" fitWidth="279.0" layoutX="6.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@../assets/BASYDVEST_negativ.png" />
+                                <Image url="@../view/assets/EASYDVEST_negativ.png" />
                             </image>
                         </ImageView>
                         <ImageView fitHeight="234.0" fitWidth="291.0" layoutY="308.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@../assets/pngimg.com - party_PNG1.png" />
+                                <Image url="@../view/assets/pngimg.com - party_PNG1.png" />
                             </image>
                         </ImageView>
                     </children>
