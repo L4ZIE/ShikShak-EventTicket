@@ -20,8 +20,8 @@
     -fx-text-fill: #fff;
     -fx-font-size: 15px;
     -fx-font-family: "Arial";
-    -fx-alignment: CENTER_LFET;
-}
+    -fx-alignment: center-left;
+    }
 
 .logout-btn{
     -fx-background-color: #803b80;
