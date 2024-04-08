@@ -6,11 +6,19 @@ import com.microsoft.sqlserver.jdbc.SQLServerException;
 import java.sql.Connection;
 import java.sql.SQLException;
 
-public class dataBaseConnector
+public class DataBaseConnector
 {
     private SQLServerDataSource dataSource;
+    private static DataBaseConnector instance;
 
-    public dataBaseConnector()
+    public static DataBaseConnector getInstance(){
+        if (instance==null){
+            instance = new DataBaseConnector();
+        }
+        return instance;
+    }
+
+    public DataBaseConnector()
     {
         dataSource = new SQLServerDataSource();
         dataSource.setDatabaseName("CSe2023b_e_19-EventTicket");
@@ -28,7 +36,7 @@ public class dataBaseConnector
 
     public static void main(String[] args) throws SQLException
     {
-        dataBaseConnector dataBaseConnector = new dataBaseConnector();
+        DataBaseConnector dataBaseConnector = new DataBaseConnector();
 
         try(Connection connection = dataBaseConnector.getConnection())
         {
