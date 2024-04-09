@@ -18,7 +18,7 @@ public class Main extends Application {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/gui/view/login.fxml"));
             Parent root = loader.load();
             Scene scene = new Scene(root);
-            String css = getClass().getResource("/gui/view/loginDesign.css").toExternalForm();
+            String css = getClass().getResource("/gui/css/loginDesign.css").toExternalForm();
             scene.getStylesheets().add(css);
 
             root.setOnMousePressed(event -> {
