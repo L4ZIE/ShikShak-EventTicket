@@ -7,7 +7,7 @@ import javafx.stage.StageStyle;
 
 import java.io.IOException;
 
-public class EventTickets extends Application {
+public class Main extends Application {
 
     private double x = 0;
     private double y = 0;

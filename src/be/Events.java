@@ -8,6 +8,8 @@ public class Events {
     private Date startDate;
     private Date endDate;
     private String eventLocation;
+
+    private String locationGuide;
     private String notes;
 
     public int getId() {
@@ -20,7 +22,7 @@ public class Events {
         this.eventName = eventName;
     }
 
-    public Date getStartDate() {
+    public java.sql.Date getStartDate() {
         return startDate;
     }
 
@@ -28,7 +30,7 @@ public class Events {
         this.startDate = startDate;
     }
 
-    public Date getEndDate() {
+    public java.sql.Date getEndDate() {
         return endDate;
     }
 
@@ -44,6 +46,14 @@ public class Events {
         this.eventLocation = eventLocation;
     }
 
+    public String getLocationGuide() {
+        return locationGuide;
+    }
+
+    public void setLocationGuide(String locationGuide) {
+        this.locationGuide = locationGuide;
+    }
+
     public String getNotes() {
         return notes;
     }
@@ -52,12 +62,13 @@ public class Events {
         this.notes = notes;
     }
 
-    public Events(int id, String eventName, Date startDate, Date endDate, String eventLocation, String notes){
+    public Events(int id, String eventName, Date startDate, Date endDate, String eventLocation, String locationGuide, String notes){
         this.id = id;
         this.eventName = eventName;
         this.startDate = startDate;
         this.endDate = endDate;
         this.eventLocation = eventLocation;
+        this.locationGuide = locationGuide;
         this.notes = notes;
     }
 
