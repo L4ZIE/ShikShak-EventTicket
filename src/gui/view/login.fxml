@@ -1,14 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="gui.Login"
-            prefHeight="400.0" prefWidth="600.0">
-
-</AnchorPane>
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="471.0" prefWidth="559.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.loginViewController">
+    <children>
+        <AnchorPane prefHeight="471.0" prefWidth="488.0">
+            <children>
+                <AnchorPane prefHeight="471.0" prefWidth="289.0" styleClass="left-form" stylesheets="@../css/loginDesign.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <Label alignment="CENTER" layoutX="58.0" layoutY="243.0" prefHeight="25.0" prefWidth="174.0" text="EASV Bar Events" textFill="#fffafa">
+                            <font>
+                                <Font name="Tahoma" size="20.0" />
+                            </font>
+                        </Label>
+                        <ImageView fitHeight="209.0" fitWidth="279.0" layoutX="6.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../view/assets/EASYDVEST_negativ.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="234.0" fitWidth="291.0" layoutY="308.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../view/assets/pngimg.com - party_PNG1.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </AnchorPane>
+                <AnchorPane layoutX="280.0" prefHeight="471.0" prefWidth="279.0" styleClass="white-bg" stylesheets="@../css/loginDesign.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="280.00000000000006" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <FontAwesomeIcon fill="#483448" glyphName="USER" layoutX="114.0" layoutY="115.0" size="6em" text="" />
+                        <Label layoutX="91.0" layoutY="134.0" text="Sign in" textFill="#483448">
+                            <font>
+                                <Font name="Segoe UI Black" size="30.0" />
+                            </font>
+                        </Label>
+                        <TextField layoutX="43.0" layoutY="206.0" minHeight="30.0" minWidth="200.0" promptText="Username" />
+                        <PasswordField layoutX="43.0" layoutY="255.0" prefHeight="30.0" prefWidth="200.0" promptText="Password" />
+                        <Button fx:id="loginBtn" layoutX="106.0" layoutY="320.0" mnemonicParsing="false" onAction="#login" prefHeight="43.0" prefWidth="74.0" styleClass="login-btn" stylesheets="@../css/loginDesign.css" text="Login" />
+                        <Button layoutX="243.0" layoutY="2.0" mnemonicParsing="false" onAction="#closeWindow" prefHeight="24.0" prefWidth="47.0" styleClass="close" stylesheets="@../css/loginDesign.css" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+                            <graphic>
+                                <FontAwesomeIcon glyphName="CLOSE" size="1.2em" />
+                            </graphic>
+                        </Button>
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+    </children>
+</StackPane>
