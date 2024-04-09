@@ -1,12 +1,15 @@
 package gui.controller;
 
 import javafx.fxml.FXML;
+import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.layout.AnchorPane;
 
 import javafx.event.ActionEvent;
+import javafx.stage.Stage;
+
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -69,15 +72,19 @@ public class adminViewController {
                 private TableView<?> table;
 
 
-
-                public void switchForm(ActionEvent event) {
-                        if (event.getSource() == customers_btn) {
-                                customers_form.setVisible(true);
-                                events_form.setVisible(false);
-                        } else if (event.getSource() == events_btn) {
-                                customers_form.setVisible(false);
-                                events_form.setVisible(true);
-                        }
-                }
+    public void switchForm(ActionEvent event) {
+        if (event.getSource() == customers_btn) {
+            customers_form.setVisible(true);
+            events_form.setVisible(false);
+        } else if (event.getSource() == events_btn) {
+            customers_form.setVisible(false);
+            events_form.setVisible(true);
         }
+    }
+
+    public void closeWindow(ActionEvent event) {
+        Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        currentStage.close();
+    }
+}
 

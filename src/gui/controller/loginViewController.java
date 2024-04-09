@@ -17,10 +17,7 @@ public class loginViewController {
     @FXML
     private Button loginBtn;
 
-    @FXML
-    private void login(ActionEvent event) {
-        openNextWindow(event);
-    }
+
 
     private void openNextWindow(ActionEvent event) {
         try {
@@ -37,6 +34,12 @@ public class loginViewController {
             e.printStackTrace();
             // Handle the exception gracefully, maybe show an error dialog or log it.
         }
+    }
+
+
+
+    public void login(ActionEvent event) {
+        openNextWindow(event);
     }
 
     public void closeWindow(ActionEvent event) {
