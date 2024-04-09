@@ -1,0 +1,39 @@
+#title{
+    -fx-font-family: "Segoe UI Black";
+    -fx-font-size: 40;
+    -fx-text-fill: white;
+}
+#titleBox{
+    -fx-background-color: #803b80;
+}
+
+.label{
+    -fx-font-size: 12;
+}
+
+#btn {
+    -fx-cursor: hand;
+    -fx-background-color: transparent;
+    -fx-border-color: linear-gradient(to bottom right, #8d36a4, #803b80);
+    -fx-border-radius: 5px 5px 5px 5px;
+    -fx-border-width: 1px;
+    -fx-font-size: 12;
+}
+
+#btn:hover{
+    -fx-background-color:linear-gradient(to bottom, #aa4eaa, #aa4eaa);
+}
+
+#txtField{
+    -fx-background-color: #fff;
+    -fx-border-color:linear-gradient(to bottom, #aa4eaa, #aa4eaa) ;
+    -fx-border-width: 0px 0px 0.8px 0px;
+    -fx-font-size: 13px;
+    -fx-font-family: "Tahoma";
+    -fx-alignment: TOP_LEFT;
+}
+
+#txtField:focused{
+    -fx-border-color: #803b80;
+    -fx-border-width: 0px 0px 1.5 0px;
+}
