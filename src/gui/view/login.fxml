@@ -10,7 +10,7 @@
     <children>
         <AnchorPane prefHeight="471.0" prefWidth="488.0">
             <children>
-                <AnchorPane prefHeight="471.0" prefWidth="289.0" styleClass="left-form" stylesheets="@LoginDesign.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                <AnchorPane prefHeight="471.0" prefWidth="289.0" styleClass="left-form" stylesheets="@loginDesign.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <children>
                         <Label alignment="CENTER" layoutX="58.0" layoutY="243.0" prefHeight="25.0" prefWidth="174.0" text="EASV Bar Events" textFill="#fffafa">
                             <font>
@@ -29,7 +29,7 @@
                         </ImageView>
                     </children>
                 </AnchorPane>
-                <AnchorPane layoutX="280.0" prefHeight="471.0" prefWidth="279.0" styleClass="white-bg" stylesheets="@LoginDesign.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="280.00000000000006" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                <AnchorPane layoutX="280.0" prefHeight="471.0" prefWidth="279.0" styleClass="white-bg" stylesheets="@loginDesign.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="280.00000000000006" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <children>
                         <FontAwesomeIcon fill="#483448" glyphName="USER" layoutX="114.0" layoutY="115.0" size="6em" text="" />
                         <Label layoutX="91.0" layoutY="134.0" text="Sign in" textFill="#483448">
@@ -39,8 +39,8 @@
                         </Label>
                         <TextField layoutX="43.0" layoutY="206.0" minHeight="30.0" minWidth="200.0" promptText="Username" />
                         <PasswordField layoutX="43.0" layoutY="255.0" prefHeight="30.0" prefWidth="200.0" promptText="Password" />
-                        <Button fx:id="loginBtn" layoutX="106.0" layoutY="320.0" mnemonicParsing="false" onAction="#login" prefHeight="43.0" prefWidth="74.0" styleClass="login-btn" stylesheets="@LoginDesign.css" text="Login" />
-                        <Button layoutX="243.0" layoutY="2.0" mnemonicParsing="false" onAction="#closeWindow" prefHeight="24.0" prefWidth="47.0" styleClass="close" stylesheets="@LoginDesign.css" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+                        <Button fx:id="loginBtn" layoutX="106.0" layoutY="320.0" mnemonicParsing="false" onAction="#login" prefHeight="43.0" prefWidth="74.0" styleClass="login-btn" stylesheets="@loginDesign.css" text="Login" />
+                        <Button layoutX="243.0" layoutY="2.0" mnemonicParsing="false" onAction="#closeWindow" prefHeight="24.0" prefWidth="47.0" styleClass="close" stylesheets="@loginDesign.css" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
                             <graphic>
                                 <FontAwesomeIcon glyphName="CLOSE" size="1.2em" />
                             </graphic>
