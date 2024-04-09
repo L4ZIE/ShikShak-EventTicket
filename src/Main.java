@@ -7,7 +7,7 @@ import javafx.stage.StageStyle;
 
 import java.io.IOException;
 
-public class EventTickets extends Application {
+public class Main extends Application {
 
     private double x = 0;
     private double y = 0;
@@ -18,7 +18,7 @@ public class EventTickets extends Application {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/gui/view/login.fxml"));
             Parent root = loader.load();
             Scene scene = new Scene(root);
-            String css = getClass().getResource("/gui/view/loginDesign.css").toExternalForm();
+            String css = getClass().getResource("/gui/css/loginDesign.css").toExternalForm();
             scene.getStylesheets().add(css);
 
             root.setOnMousePressed(event -> {
