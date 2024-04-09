@@ -133,7 +133,7 @@
 .combo-box{
     -fx-background-color: #fff;
     -fx-background-radius: 5px;
-    -fx-border-color: to right, #444857, #537e90;
+    -fx-border-color: #444857, #537e90;
     -fx-border-width: 0.8px;
     -fx-border-radius: 0.5px;
     -fx-font-size: 13px;
