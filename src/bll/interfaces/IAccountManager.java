@@ -12,9 +12,9 @@ public interface IAccountManager {
 
     List<Account> searchForAccount(String query);
 
-    List<Account> getAccountsByRole(int roleId);
+    List<Account> getAccountsByType(boolean type);
     Account getAccountById(int id);
 
-    Boolean logInUser(String uName, String uPassword);
+    Boolean logInUser(String username, String password);
     Account getAccountByName(String name);
 }

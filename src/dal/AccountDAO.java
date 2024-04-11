@@ -29,7 +29,7 @@ public class AccountDAO implements IAccountDAO {
                         resultSet.getInt("id"),
                         resultSet.getString("username"),
                         resultSet.getString("password"),
-                        resultSet.getInt("roleID")
+                        resultSet.getBoolean("accountType")
                 ));
             }
             return Accounts;
@@ -44,12 +44,12 @@ public class AccountDAO implements IAccountDAO {
     @Override
     public void createAccount(Account account) {
         try {
-            String sql = "INSERT INTO accounts(username, password, role_Id) VALUES(?,?,?)";
+            String sql = "INSERT INTO accounts(username, password, accounttype) VALUES(?,?,?)";
             preparedStatement = dataBaseConnector.getConnection().prepareStatement(sql);
 
             preparedStatement.setString(1, account.getUsername());
             preparedStatement.setString(2, account.getPassword());
-            preparedStatement.setInt(3, account.getRoleId());
+            preparedStatement.setBoolean(3, account.getAccountType());
 
             preparedStatement.execute();
 
@@ -81,12 +81,12 @@ public class AccountDAO implements IAccountDAO {
     @Override
     public void updateAccount(Account account) {
         try {
-            String sql = "UPDATE accounts SET username = ?, password = ?, role_Id = ? WHERE id = ?";
+            String sql = "UPDATE accounts SET username = ?, password = ?, accounttype = ? WHERE id = ?";
             Connection conn = dataBaseConnector.getConnection();
             PreparedStatement preparedStatement = conn.prepareStatement(sql);
             preparedStatement.setString(1, account.getUsername());
             preparedStatement.setString(2, account.getPassword());
-            preparedStatement.setInt(3, account.getRoleId());
+            preparedStatement.setBoolean(3, account.getAccountType());
             preparedStatement.setInt(4, account.getId());
 
             preparedStatement.executeUpdate();
@@ -102,7 +102,7 @@ public class AccountDAO implements IAccountDAO {
     @Override
     public boolean logInUser(String username, String password) {
         try {
-            String sql = "SELECT password, role_Id FROM accounts WHERE username = ?";
+            String sql = "SELECT password, accounttype FROM accounts WHERE username = ?";
 
             preparedStatement = dataBaseConnector.getConnection().prepareStatement(sql);
             preparedStatement.setString(1, username);
@@ -112,7 +112,7 @@ public class AccountDAO implements IAccountDAO {
                 return false;
             } else {
                 if (resultSet.next()){
-                    return resultSet.getString(password).equals(password);
+                    return resultSet.getString("password").equals(password);
                 } else {
                     return false;
                 }

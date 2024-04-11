@@ -5,7 +5,7 @@ public class Account
     private int id;
     private String username;
     private String password;
-    private int roleId;
+    private boolean accountType;
 
     public int getId() {
         return id;
@@ -14,19 +14,22 @@ public class Account
     public void setUsername(String username){this.username = username;}
     public String getPassword(){return password;}
     public void setPassword(String password){this.password = password;}
-    public int getRoleId(){return roleId;}
 
-    public void setRoleId(int roleID) {this.roleId = roleID;}
+    public boolean getAccountType(){return accountType;}
 
-    public Account(int id, String username, String password, int roleId){
+    public void setAccountType(boolean accountType) {
+        this.accountType = accountType;
+    }
+
+    public Account(int id, String username, String password, boolean accountType){
         this.id = id;
         this.username = username;
         this.password = password;
-        this.roleId = roleId;
+        this.accountType = accountType;
     }
 
     @Override
     public String toString(){
-        return id + "" + username + "" + password + "" + roleId;
+        return id + "" + username + "" + password + "" + accountType;
     }
 }
