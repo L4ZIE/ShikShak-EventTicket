@@ -122,6 +122,7 @@
     -fx-border-width: 0px 0px 0.8px 0px;
     -fx-font-size: 13px;
     -fx-font-family: "Tahoma";
+    -fx-alignment: TOP_LEFT;
 
 }
 
@@ -133,7 +134,7 @@
 .combo-box{
     -fx-background-color: #fff;
     -fx-background-radius: 5px;
-    -fx-border-color: #444857, #537e90;
+    -fx-border-color: #aa4eaa, #aa4eaa;
     -fx-border-width: 0.8px;
     -fx-border-radius: 0.5px;
     -fx-font-size: 13px;
@@ -147,4 +148,10 @@
 
 #label1{
     -fx-text-fill: black;
+}
+
+#titleCreateEvent{
+    -fx-font-family: "Segoe UI Black";
+    -fx-font-size: 24;
+    -fx-text-fill: #aa4eaa;
 }

@@ -8,12 +8,12 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox maxHeight="600.0" maxWidth="450.0" stylesheets="@../css/NewEvent.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.NewEventController">
+<VBox maxHeight="600.0" maxWidth="450.0" stylesheets="@../css/UpdateEvent.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.UpdateEventController">
 
     <children>
         <BorderPane id="titleBox" minHeight="120.0" prefHeight="98.0" prefWidth="450.0">
             <center>
-                <Label id="title" prefHeight="111.0" prefWidth="294.0" text="CREATE EVENT" BorderPane.alignment="CENTER" />
+                <Label id="title" prefHeight="111.0" prefWidth="307.0" text="UPDATE EVENT" BorderPane.alignment="CENTER" />
             </center>
             <VBox.margin>
                 <Insets />
@@ -94,7 +94,7 @@
                                         <Insets left="40.0" top="40.0" />
                                     </HBox.margin>
                                 </Button>
-                                <Button id="btn" mnemonicParsing="false" onAction="#createEvent" text="Create">
+                                <Button id="btn" mnemonicParsing="false" onAction="#createEvent" text="Update">
                                     <HBox.margin>
                                         <Insets left="40.0" top="40.0" />
                                     </HBox.margin>

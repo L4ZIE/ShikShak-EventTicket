@@ -2,19 +2,23 @@ package bll;
 
 import be.Events;
 import bll.interfaces.IEventManager;
+import dal.EventsDAO;
+import dal.interfaces.IEventsDAO;
 
 import java.util.Date;
 import java.util.List;
 
 public class EventManager implements IEventManager {
+    IEventsDAO eventsDAO = new EventsDAO();
+
     @Override
     public List<Events> getAllEvents() {
-        return null;
+        return eventsDAO.getAllEvents();
     }
 
     @Override
     public void createEvent(Events events) {
-
+        eventsDAO.createEvent(events);
     }
 
     @Override

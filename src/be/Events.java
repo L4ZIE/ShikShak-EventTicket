@@ -1,15 +1,14 @@
 package be;
 
-import java.util.Date;
 
 public class Events {
     private int id;
     private String eventName;
-    private Date startDate;
-    private Date endDate;
+    private String startDate;
+    private String endDate;
     private String eventLocation;
 
-    private String locationGuide;
+    private String locationGuidance;
     private String notes;
 
     public int getId() {
@@ -22,19 +21,19 @@ public class Events {
         this.eventName = eventName;
     }
 
-    public java.sql.Date getStartDate() {
-        return (java.sql.Date) startDate;
+    public String getStartDate() {
+        return startDate;
     }
 
-    public void setStartDate(Date startDate) {
+    public void setStartDate(String startDate) {
         this.startDate = startDate;
     }
 
-    public java.sql.Date getEndDate() {
-        return (java.sql.Date) endDate;
+    public String getEndDate() {
+        return endDate;
     }
 
-    public void setEndDate(Date endDate) {
+    public void setEndDate(String endDate) {
         this.endDate = endDate;
     }
 
@@ -46,12 +45,12 @@ public class Events {
         this.eventLocation = eventLocation;
     }
 
-    public String getLocationGuide() {
-        return locationGuide;
+    public String getLocationGuidance() {
+        return locationGuidance;
     }
 
-    public void setLocationGuide(String locationGuide) {
-        this.locationGuide = locationGuide;
+    public void setLocationGuidance(String locationGuidance) {
+        this.locationGuidance = locationGuidance;
     }
 
     public String getNotes() {
@@ -62,17 +61,17 @@ public class Events {
         this.notes = notes;
     }
 
-    public Events(int id, String eventName, Date startDate, Date endDate, String eventLocation, String locationGuide, String notes){
+    public Events(int id, String eventName, String startDate, String endDate, String eventLocation, String locationGuidance, String notes){
         this.id = id;
         this.eventName = eventName;
         this.startDate = startDate;
         this.endDate = endDate;
         this.eventLocation = eventLocation;
-        this.locationGuide = locationGuide;
+        this.locationGuidance = locationGuidance;
         this.notes = notes;
     }
 
     @Override
     public String toString() {
-        return id + "" + eventName + "" + startDate + "" + endDate + "" + eventLocation + "" + notes;}
+        return id + "" + eventName + "" + startDate + "" + endDate + "" + eventLocation + "" + locationGuidance + "" + notes;}
 }

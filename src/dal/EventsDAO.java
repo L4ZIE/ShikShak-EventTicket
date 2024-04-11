@@ -4,8 +4,6 @@ import be.Events;
 import com.microsoft.sqlserver.jdbc.SQLServerException;
 import dal.connector.DataBaseConnector;
 import dal.interfaces.IEventsDAO;
-import javafx.event.Event;
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -28,8 +26,8 @@ public class EventsDAO implements IEventsDAO {
                 Events.add(new Events(
                         resultSet.getInt("id"),
                         resultSet.getString("eventname"),
-                        resultSet.getDate("startdate"),
-                        resultSet.getDate("enddate"),
+                        resultSet.getString("startdate"),
+                        resultSet.getString("enddate"),
                         resultSet.getString("eventlocation"),
                         resultSet.getString("locationguide"),
                         resultSet.getString("notes")
@@ -51,10 +49,10 @@ public class EventsDAO implements IEventsDAO {
             preparedStatement = dataBaseConnector.getConnection().prepareStatement(sql);
 
             preparedStatement.setString(1, events.getEventName());
-            preparedStatement.setDate(2, events.getStartDate());
-            preparedStatement.setDate(3, events.getEndDate());
+            preparedStatement.setString(2, events.getStartDate());
+            preparedStatement.setString(3, events.getEndDate());
             preparedStatement.setString(4, events.getEventLocation());
-            preparedStatement.setString(5, events.getLocationGuide());
+            preparedStatement.setString(5, events.getLocationGuidance());
             preparedStatement.setString(6, events.getNotes());
 
             preparedStatement.execute();
@@ -89,10 +87,10 @@ public class EventsDAO implements IEventsDAO {
             PreparedStatement preparedStatement = conn.prepareStatement(sql);
 
             preparedStatement.setString(1, events.getEventName());
-            preparedStatement.setDate(2, events.getStartDate());
-            preparedStatement.setDate(3, events.getEndDate());
+            preparedStatement.setString(2, events.getStartDate());
+            preparedStatement.setString(3, events.getEndDate());
             preparedStatement.setString(4, events.getEventLocation());
-            preparedStatement.setString(5, events.getLocationGuide());
+            preparedStatement.setString(5, events.getLocationGuidance());
             preparedStatement.setString(6, events.getNotes());
 
             preparedStatement.executeUpdate();

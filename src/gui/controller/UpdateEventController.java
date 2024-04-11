@@ -2,7 +2,7 @@ package gui.controller;
 
 import javafx.event.ActionEvent;
 
-public class NewEventController {
+public class UpdateEventController {
     public void closeWindow(ActionEvent event) {
     }
 
