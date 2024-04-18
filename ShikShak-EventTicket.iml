@@ -18,5 +18,6 @@
         <jarDirectory url="file://$USER_HOME$/Downloads/jar_files" recursive="false" />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="de.jensd.fontawesomefx" level="project" />
   </component>
 </module>
